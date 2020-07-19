@@ -73,7 +73,7 @@ class MainActivity : AppCompatActivity() {
                 val id = cursor.getLong(fieldIndex)
                 val imageUri = ContentUris.withAppendedId(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, id)
 
-                var mylist = arrayOf<String>()
+                var mylist = mutableListOf<String>()
                 mylist[count] = imageUri.toString()
                 count = count+1
 
